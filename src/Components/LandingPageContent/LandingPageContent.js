@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './LandingPageContent.css';
 
 export default function LandingPageContent() {
@@ -9,7 +10,7 @@ export default function LandingPageContent() {
         <p className="landingpagecontent_description">Ready to watch Enter your email to create or start your membership.{""}</p>
         <div className="landingpagecontent_input">
             <input type="text" />
-            <button>GET STARTED</button>
+            <Link to='/sign-in'><button className='landingPageContentButton'>GET STARTED</button></Link>
         </div>
     </div>
   )

@@ -7,7 +7,7 @@ import SignInBody from '../../Components/SignInBody/SignInBody';
 export default function SignIn() {
   return (
     <div>
-      <Navbar/>
+      <Navbar showSignInButton = {false}/>
       <SignInBody/>
     </div>
   )
