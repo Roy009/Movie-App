@@ -28,7 +28,9 @@ export default function SignInBody() {
             <input type="password" placeholder="Password" />
             <button>Sign Up</button>
             <button>Login as Guest User</button>
-            <p className="signinbody_text"><span onClick={() => setSignInBox(true)}>Sign In.</span>
+            <p className="signinbody_text">
+              Have an account?{" "}
+              <span onClick={() => setSignInBox(true)}>SignIn.</span>
             </p>
           </div>
         </div>)}
