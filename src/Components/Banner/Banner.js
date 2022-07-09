@@ -44,7 +44,7 @@ export default function Banner() {
         </h1>
         <div className="banner_buttons">
           <button>Play</button>
-          <button>My List</button>
+          <button>Favorites</button>
         </div>
         <h3>{truncate(movie?.overview, 80)}</h3>
       </div>

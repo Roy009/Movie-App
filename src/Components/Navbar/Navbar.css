@@ -3,13 +3,14 @@
     top: 0;
     display: flex;
     width: 100%;
+    
 }
 .user_name{
     color: white;
-    font-weight: 700;
-    position: absolute;
-    top: 14px;
-    right: 80px;
+    font-weight: bolder;
+    font-size: 2vh;
+    display: block;
+    margin-right: 4px;
 }
 .navbar_color{
     height: 50px;
@@ -18,7 +19,7 @@
 
 }
 .navbar_dark{
-    background-color: rgb(45, 45, 94);
+    background-color: rgb(36, 36, 42);
     height: 50px;
 }
 

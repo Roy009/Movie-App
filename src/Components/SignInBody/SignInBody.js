@@ -33,7 +33,8 @@ export default function SignInBody() {
               <span onClick={() => setSignInBox(true)}>SignIn.</span>
             </p>
           </div>
-        </div>)}
+        </div>
+      )}
     </>
   );
 }
