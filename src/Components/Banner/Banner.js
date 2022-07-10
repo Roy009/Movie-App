@@ -1,10 +1,10 @@
 import axios from 'axios';
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import requests from '../../requests/Requests';
 import "./Banner.css";
 export default function Banner() {
   const [movie, setMovie] = useState([]);
-
+  const [image, setImage] = useState([]);
   useEffect(() => {
     fetchData();
   }, []);
@@ -18,15 +18,26 @@ export default function Banner() {
       Math.floor(Math.random() * request.data.results.length - 1)
       ]
     );
-    console.log(movie?.backdrop_path);
+
+
+    // request.data.results.map((result) => {
+    //   image.
+    // })
   }
 
   const truncate = (string, n) => {
     return string?.length > n ? string.substr(0, n - 1) + "..." : string;
   };
 
+  // const banner_image = document.getElementById("banner_image");
+  // var i = 0;
+  // var time = 2000;
+  // function changeImg() {
+  //   banner_image.backgroundImage = ``;
+  // }
   return (
     <div
+      id='banner_image'
       className="banner"
       style={{
         backgroundImage: movie?.backdrop_path

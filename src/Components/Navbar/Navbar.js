@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useAuth0 } from '@auth0/auth0-react';
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -35,6 +35,7 @@ export default function Navbar({ showSignInButton, logOut, show }) {
     loginWithRedirect();
   }
   return (
+    
     <div className={`navbar_container 
     ${show && "nav-color"} 
     ${dark && "navbar_dark"}`}>

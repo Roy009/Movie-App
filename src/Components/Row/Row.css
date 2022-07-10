@@ -34,3 +34,11 @@
 .rowPoster_large {
     height: 250px !important;
 }
+::-webkit-scrollbar{
+    width: 12px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #a9181f;
+    border-radius: 6px;
+}
